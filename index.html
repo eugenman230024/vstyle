@@ -16,9 +16,12 @@
 
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" href="css/style.css" >
+
+		<!-- CUSTOM JS -->
+		<script src="js/AngularJS.js"></script>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div ng-app="root" ng-controller="doInit" class="container-fluid">
 			<div class="row">
 				<nav class="nav-bar navigation-fixed">
 
@@ -26,7 +29,7 @@
 			</div>
 			<div class="row">
 				<div class="root-container">
-
+					<ng-include ng-if="section.login" src="'template/login.html'"></ng-include>
 				</div>
 			</div>
 			<div class="row">
