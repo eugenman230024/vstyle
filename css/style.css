@@ -1,15 +1,46 @@
 /*
 * stylesheet
 */
+
+*{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 .navigation-fixed{
 	display: flex;
 	flex-direction: row;
 	height: 60px;
 	background-color: #000;
 	border-bottom: 4px solid gold;
-	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
+}
+
+.footer-container{
+	background-color: #000;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-navigation{
+	height: 50%;
+}
+
+.copyright-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #efefef;
+	width: 100%;
+	height: calc(50% - 1px);
+}
+
+.copyright-container p{
+	color: #FFF;
 }
